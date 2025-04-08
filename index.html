@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prova de Informática</title>
+ <link rel="icon" href="icon.png">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Tela Inicial -->
+  <section id="homePage" class="active">
+    <h1>Prova de Informática</h1>
+    <button onclick="showLogin()">Continuar</button>
+  </section>
+
+  <!-- Tela de Login -->
+  <section id="loginPage">
+    <h2>Login</h2>
+    <div id="loginForm">
+      <input type="text" placeholder="Nome" required /><br />
+      <input type="email" placeholder="Email" required /><br />
+      <input type="password" placeholder="Senha" required /><br />
+      <input type="text" placeholder="Número" required /><br />
+      <input type="text" placeholder="Turma" required /><br />
+      <button onclick="getData()">Iniciar Prova</button>
+    </div>
+  </section>
+
+  <!-- Tela de Perguntas -->
+  <section id="quizPage">
+    <h2>Questões</h2>
+    <form id="quizForm" onsubmit="submitQuiz(event)">
+      <div class="question">
+        <p>1. O que é um sistema operacional?</p>
+        <label><input type="radio" name="q1" value="a"> Programa de edição de texto</label><br />
+        <label><input type="radio" name="q1" value="b"> Software que gerencia recursos do computador</label><br />
+        <label><input type="radio" name="q1" value="c"> Antivírus</label>
+      </div>
+
+      <div class="question">
+        <p>2. Qual desses é um navegador?</p>
+        <label><input type="radio" name="q2" value="a"> Word</label><br />
+        <label><input type="radio" name="q2" value="b"> Google Chrome</label><br />
+        <label><input type="radio" name="q2" value="c"> Excel</label>
+      </div>
+
+      <div class="question">
+        <p>3. Escreva uma breve explicação sobre o que é um navegador.</p>
+        <textarea name="q3" rows="4" placeholder="Sua resposta aqui..." required></textarea><br />
+      </div>
+
+      <button type="submit">Enviar Respostas</button>
+    </form>
+
+    <div id="result"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
