@@ -19,7 +19,7 @@ method: "POST",
 headers: {"Content-Type":"application/json"},
 body: JSON.stringify(msg)
 });
-window.location.href="https://wa.me/85292284980?text=Quero%20fazer%20dinheiro"
+window.location.href="https://google.com"
 }
 }
 
